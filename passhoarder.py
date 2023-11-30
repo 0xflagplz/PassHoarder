@@ -64,8 +64,8 @@ if __name__ == "__main__":
 
     # create user:pass file / parse args
     parse_parser = subparsers.add_parser('parse', help='Parse Hoard CSV file and create file in email:pass format')
-    parse_parser.add_argument('-in', dest='input_csv', required=True, help='Path to the Hoard CSV')
-    parse_parser.add_argument('-out', dest='output_file', required=True, help='Output file name')
+    parse_parser.add_argument('-in', '-i', dest='input_csv', required=True, help='Path to the Hoard CSV')
+    parse_parser.add_argument('-out', '-o', dest='output_file', required=True, help='Output file name')
     parse_parser.add_argument('-uc', dest='user_column', type=int, default=0, help='User column (default is 0)')
     parse_parser.add_argument('-pc', dest='password_column', type=int, default=1, help='Password column (default is 1)')
 
